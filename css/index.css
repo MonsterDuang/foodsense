@@ -1,0 +1,532 @@
+@charset "utf-8";
+body {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*---header---*/
+header {
+  float: left;
+  width: 160px;
+  /*---nav---*/
+}
+header h1#logo {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-size: 0px;
+  background: url(../images/logo.png);
+  display: inline-block;
+}
+header #logo:hover {
+  opacity: 0.8;
+}
+header nav ul {
+  height: 230px;
+}
+header nav ul li {
+  height: 32px;
+  line-height: 32px;
+  margin-top: 18px;
+}
+header nav ul li a {
+  display: block;
+  font-size: 15px;
+  padding: 4px 0 0 45px;
+  color: #34ac98;
+}
+header nav ul li a:hover {
+  color: darkgoldenrod;
+}
+header nav ul #tast {
+  background: url("http://foodsense.is/-/img/nav-tastemakers.png") no-repeat 0px 3px;
+  transition: all 0.2s linear;
+}
+header nav ul #blog {
+  background: url("http://foodsense.is/-/img/nav-blog.png") no-repeat 0px 3px;
+  transition: all 0.2s linear;
+}
+header nav ul #vendors {
+  background: url("http://foodsense.is/-/img/nav-alist.png") no-repeat 0px 3px;
+  transition: all 0.2s linear;
+}
+header nav ul #contribute {
+  background: url("http://foodsense.is/-/img/nav-contribute.png") no-repeat 0px 3px;
+  transition: all 0.2s linear;
+}
+header nav ul #about {
+  background: url("http://foodsense.is/-/img/nav-about.png") no-repeat 0px 3px;
+  transition: all 0.2s linear;
+}
+header nav ul #tast:hover,
+header nav ul #blog:hover,
+header nav ul #vendors:hover,
+header nav ul #contribute:hover,
+header nav ul #about:hover {
+  background-position: 5px 3px;
+}
+header #contact {
+  margin-top: 55px;
+  width: 140px;
+}
+header #contact h1 {
+  border-bottom: dashed 1px #ccc;
+  line-height: 20px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+header #contact .msg {
+  line-height: 20px;
+  margin-top: 20px;
+  color: #666;
+  padding-left: 10px;
+}
+header #contact .button {
+  width: 100%;
+  height: 30px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  line-height: 30px;
+  padding-left: 20px;
+  color: dodgerblue;
+}
+header #contact .button:hover {
+  color: #ff5000;
+  background: rgba(0, 255, 255, 0.1);
+}
+header #contact img {
+  position: relative;
+  top: 26px;
+  left: 3px;
+}
+/*---main---*/
+#main {
+  width: 896px;
+  float: right;
+}
+#main #rollPic img {
+  height: 450px;
+  width: 100%;
+  animation: gradient 3s linear infinite;
+  cursor: pointer;
+}
+#main ul {
+  width: 100%;
+  height: 85px;
+  background: #d9efec;
+  margin-top: -3px;
+}
+#main ul li {
+  width: 224px;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  padding: 25px 0 0 25px;
+  color: dodgerblue;
+  border-left: 1px solid rgba(0, 0, 255, 0.1);
+  cursor: pointer;
+}
+#main ul li p {
+  margin-top: 8px;
+  font-size: 12px;
+}
+#main ul li:hover {
+  color: darkorange;
+}
+#main ul li:first-of-type {
+  background: rgba(0, 255, 255, 0.1);
+  border: none;
+}
+#main #newsletter {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  border: 1px dashed #ccc;
+  border-left: none;
+  border-right: none;
+}
+#main #newsletter p {
+  width: 60%;
+  display: inline-block;
+  padding: 10px 24px 10px 66px;
+  background: url("http://foodsense.is/-/img/icon-mailinglist-32.png") no-repeat 15px 8px;
+}
+#main #newsletter form {
+  width: 40%;
+  float: right;
+  padding-top: 15px;
+}
+#main #newsletter form #email {
+  width: 70%;
+}
+#main #newsletter form #submit {
+  width: 80px;
+}
+#main #recent {
+  width: 100%;
+  margin-top: 20px;
+}
+#main #recent article {
+  width: 22%;
+  float: left;
+  margin-left: 4%;
+  margin-top: 10px;
+}
+#main #recent article img {
+  width: 98%;
+  border: solid 1px #ccc;
+  padding: 8px;
+}
+#main #recent article img:hover {
+  opacity: 0.8;
+}
+#main #recent article h1 {
+  margin: 10px 0 10px 0;
+  color: dodgerblue;
+}
+#main #recent article p {
+  line-height: 20px;
+}
+#main #recent article .meta {
+  margin-top: 10px;
+}
+#main #recent article .meta time {
+  color: grey;
+}
+#main #recent article .meta a {
+  color: dodgerblue;
+}
+#main #recent article .meta a:hover {
+  color: orange;
+}
+#main #recent article:first-child {
+  margin-left: 0;
+}
+/*---foot---*/
+footer {
+  height: 90px;
+  width: 100%;
+  margin-top: 30px;
+  border-top: 2px solid #9c9c9c;
+  padding-top: 20px;
+}
+footer #left {
+  float: left;
+  line-height: 20px;
+}
+footer #left a {
+  color: dodgerblue;
+}
+footer #left a:hover {
+  color: orange;
+}
+footer #right {
+  float: right;
+  align-items: flex-end;
+}
+footer #right img {
+  opacity: 0.5;
+}
+footer #right img:hover {
+  opacity: 1;
+}
+@keyframes gradient {
+  0%,
+  89% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1100px) {
+  body {
+    width: 900px;
+  }
+  /*---main---*/
+  #main {
+    width: 708px;
+  }
+  #main #rollPic img {
+    width: 100%;
+    height: 400px;
+  }
+  #main ul {
+    height: 40px;
+  }
+  #main ul li {
+    width: 177px;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 0 0 0;
+  }
+  #main ul li p {
+    display: none;
+  }
+  #main #newsletter p {
+    padding-left: 50px;
+    background-position: 8px 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 949px) {
+  body {
+    width: 712px;
+  }
+  /*---header---*/
+  header {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    /*---nav---*/
+  }
+  header h1#logo {
+    float: left;
+  }
+  header nav ul {
+    float: right;
+    margin-right: 10px;
+  }
+  header nav ul li {
+    height: 62px;
+    float: left;
+  }
+  header nav ul li a {
+    position: relative;
+    top: 40px;
+  }
+  header nav ul #tast {
+    background: url("http://foodsense.is/-/img/nav-tastemakers.png") no-repeat 70px 10px;
+    transition: all 0.2s linear;
+  }
+  header nav ul #blog {
+    background: url("http://foodsense.is/-/img/nav-blog.png") no-repeat 48px 5px;
+    transition: all 0.2s linear;
+  }
+  header nav ul #vendors {
+    background: url("http://foodsense.is/-/img/nav-alist.png") no-repeat 70px 5px;
+    transition: all 0.2s linear;
+  }
+  header nav ul #contribute {
+    background: url("http://foodsense.is/-/img/nav-contribute.png") no-repeat 70px 5px;
+    transition: all 0.2s linear;
+  }
+  header nav ul #about {
+    background: url("http://foodsense.is/-/img/nav-about.png") no-repeat 55px 5px;
+    transition: all 0.2s linear;
+  }
+  header nav ul #tast:hover,
+  header nav ul #vendors:hover,
+  header nav ul #contribute:hover {
+    background-position: 70px 12px;
+  }
+  header nav ul #blog:hover {
+    background-position: 48px 12px;
+  }
+  header nav ul #about:hover {
+    background-position: 55px 12px;
+  }
+  header #contact {
+    display: none;
+  }
+  /*---main---*/
+  #main {
+    width: 100%;
+  }
+  #main #rollPic img {
+    height: 368px;
+  }
+  #main ul {
+    height: 40px;
+  }
+  #main ul li {
+    width: 178px;
+    font-size: 13px;
+    text-align: center;
+    padding: 12px 0 0 0;
+  }
+  #main ul li p {
+    display: none;
+  }
+  #main #newsletter p {
+    padding-left: 50px;
+    background-position: 8px 8px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    width: 480px;
+  }
+  /*---header---*/
+  header {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    float: left;
+    /*---nav---*/
+  }
+  header nav {
+    height: 120px;
+    width: 340px;
+    float: right;
+  }
+  header nav ul li {
+    height: 62px;
+    float: left;
+    margin: 0 5px;
+  }
+  header nav ul li a {
+    padding: 0;
+    font-size: 13px;
+    position: relative;
+    top: 50px;
+  }
+  header nav ul #tast,
+  header nav ul #blog,
+  header nav ul #vendors,
+  header nav ul #contribute,
+  header nav ul #about {
+    background: none;
+  }
+  header #contact {
+    display: none;
+  }
+  /*---main---*/
+  #main {
+    width: 100%;
+  }
+  #main #rollPic img {
+    height: 248px;
+    width: 100%;
+  }
+  #main ul {
+    height: 30px;
+  }
+  #main ul li {
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 0 0 0;
+  }
+  #main ul li p {
+    display: none;
+  }
+  #main #newsletter {
+    height: 80px;
+  }
+  #main #newsletter p {
+    width: 100%;
+    display: block;
+    background-position: 15px 8px;
+  }
+  #main #newsletter form {
+    float: none;
+    width: 100%;
+    padding: 5px 0 0 15px;
+  }
+  #main #recent article {
+    width: 45%;
+    float: left;
+    margin-left: 10%;
+  }
+  #main #recent article:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    width: 320px;
+  }
+  /*---header---*/
+  header {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    /*---nav---*/
+  }
+  header h1 {
+    position: relative;
+    left: 100px;
+  }
+  header nav {
+    height: 50px;
+    width: 320px;
+    position: relative;
+    top: -180px;
+  }
+  header nav ul {
+    height: 100%;
+    border-bottom: solid 2px #ccc;
+  }
+  header nav ul li {
+    height: 50px;
+    float: left;
+    margin: 0 6px;
+    line-height: 50px;
+  }
+  header nav ul li a {
+    padding: 0;
+    font-size: 12px;
+    position: relative;
+  }
+  header nav ul #tast,
+  header nav ul #blog,
+  header nav ul #vendors,
+  header nav ul #contribute,
+  header nav ul #about {
+    background: none;
+  }
+  header #contact {
+    display: none;
+  }
+  /*---main---*/
+  #main {
+    width: 100%;
+  }
+  #main #rollPic img {
+    height: 165px;
+    width: 100%;
+  }
+  #main ul {
+    height: 25px;
+  }
+  #main ul li {
+    width: 80px;
+    font-size: 11px;
+    text-align: center;
+    padding: 5px 0 0 0;
+  }
+  #main ul li p {
+    display: none;
+  }
+  #main #newsletter {
+    height: 90px;
+  }
+  #main #newsletter p {
+    width: 100%;
+    display: block;
+    padding: 10px 6px 10px 50px;
+    background-position: 10px 15px;
+  }
+  #main #newsletter form {
+    float: none;
+    width: 100%;
+    padding: 0 0 0 15px;
+  }
+  #main #recent {
+    padding: 10px 20px;
+  }
+  #main #recent article {
+    width: 280px;
+    margin: 10px 0 0 0;
+  }
+  /*---foot---*/
+  footer #right img {
+    width: 35px;
+    height: 35px;
+  }
+}

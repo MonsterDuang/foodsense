@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Sense | Plant-Based Eating At Its Best</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<!----header---->
+<header>
+    <h1 id="logo">Food Sense</h1>
+    <nav>
+        <ul>
+            <li id="tast"><a href="">Tastemakers</a></li>
+            <li id="blog"><a href="">Blog</a></li>
+            <li id="vendors"><a href="">The A-List</a></li>
+            <li id="contribute"><a href="">Contribute</a></li>
+            <li id="about"><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <aside id="contact">
+        <section class="twitter">
+            <h1>Latest Tweet</h1>
+            <p>
+                <img src="http://foodsense.is/-/img/icon-twitter-16.png" alt="">
+                <a href="" class="button twitterPic">Join the Conversation</a>
+            </p>
+        </section>
+        <section class="facebook">
+            <h1>Let's be friends!</h1>
+            <p class="msg">For weekly finds, community recommendations, and more, like us on Facebook.</p>
+            <p>
+                <img src="http://foodsense.is/-/img/icon-facebook-16.png" alt="">
+                <a href="" class="button facebookPic">Join the Community</a>
+            </p>
+        </section>
+    </aside>
+</header>
+
+<!-----main----->
+<div id="main">
+    <div id="rollPic">
+        <img class="pic" src="images/pic1.png" alt="">
+    </div>
+    <ul id="btn">
+        <li onclick="stop(0)">Tastemakers
+            <p>Feast your eyes & get recipes!</p>
+        </li>
+        <li onclick="stop(1)">Blog
+            <p>News, how-tos, stories, and more</p>
+        </li>
+        <li onclick="stop(2)">The A-List
+            <p>Handpicked, absolute favorites</p>
+        </li>
+        <li onclick="stop(3)">Contribute
+            <p>We want to hear from you!</p>
+        </li>
+    </ul>
+    <!--js for rollPic-->
+    <script src="./js/rollPic.js"></script>
+
+    <section id="newsletter">
+        <p>Sign up for our newsletter to receive a handpicked selection of the best stories, recipes, and news,
+            delivered weekly to your inbox.</p>
+        <form action="" method="post" name="mc-embedded-subscribe-form">
+
+            <input type="email" id="email" name="EMAIL" placeholder="Email"/>
+            <input type="submit" id="submit" value="Subscribe" name="subscribe"/>
+        </form>
+    </section>
+
+    <section id="recent">
+        <article>
+            <a href="">
+                <img src="http://foodsense.is/uploads/post-images/cookbooks_blog.jpg" class="border" alt="image">
+                <h1>2012’s Best Summer Cookbooks</h1>
+            </a>
+            <p>With the best of the season coming from “orchards, farms and gardens,” NPR has put together an impressive
+                collection of 10 summer cookbooks.</p>
+            <p class="meta">
+                <time datetime="2012-05-23T02:41-05:00" pubdate="">May 23, 2012</time>
+                / <a href="http://foodsense.is/blog/2012s-best-summer-cookbooks">Read »</a>
+            </p>
+        </article>
+
+        <article>
+            <a href="">
+                <img src="http://foodsense.is/uploads/post-images/SweetPotatoChips.jpg" class="border" alt="image">
+                <h1>How to Make Vegetable Chips</h1>
+            </a>
+            <p>About a month ago, I ate almost an entire box of kale chips. My brother and I were visiting our cousin in
+                Brooklyn, and before a very thoughtfully prepared vegan…</p>
+            <p class="meta">
+                <time datetime="2012-05-17T08:35-05:00" pubdate="">May 17, 2012</time>
+                / <a href="">Read »</a>
+            </p>
+        </article>
+
+        <article>
+            <a href="">
+                <img src="http://foodsense.is/uploads/post-images/Pinterest_Page_featured.png" class="border" alt="image">
+                <h1>Join us on Pinterest!</h1>
+            </a>
+            <p>If I could curate a cookbook for you, this would be it.</p>
+            <p class="meta">
+                <time datetime="2012-05-16T09:59-05:00" pubdate="">May 16, 2012</time>
+                / <a href="">Read »</a>
+            </p>
+        </article>
+
+        <article>
+            <a href="">
+                <img src="http://foodsense.is/uploads/post-images/Adithi_Dinner_blog.jpg" class="border" alt="image">
+                <h1>Recipes from a Sunday Supper</h1>
+            </a>
+            <p>I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this
+                wonderful Sunday supper - eat them slowly, a little bit at…</p>
+            <p class="meta">
+                <time datetime="2012-05-15T09:42-05:00" pubdate="">May 15, 2012</time>
+                / <a href="">Read »</a>
+            </p>
+        </article>
+    </section>
+</div>
+
+<!-----foot----->
+<footer>
+    <div id="left">
+        <p><a href="">Privacy Policy</a> | <a href="">Terms of Use</a> | <a href="">Contact</a></p>
+        <p> © 2017 Food Sense, all rights reserved</p>
+    </div>
+    <div id="right">
+        <img src="./images/twitter.png" alt="">
+        <img src="./images/facebook.png" alt="">
+        <img src="./images/rss.png" alt="">
+    </div>
+</footer>
+</body>
+</html>
